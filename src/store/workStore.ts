@@ -2,7 +2,18 @@ import { makeAutoObservable, action } from 'mobx';
 import { Service } from '../service'; // Убедитесь, что Service правильно импортирован
 
 interface WorkData {
+    workTypes?: { name: string }[];
     companyName: string;
+    address?: string;
+    logo?: string;
+    dateStartByCity?: string;
+    timeStartByCity?: string;
+    timeEndByCity?: string;
+    currentWorkers?: string;
+    planWorkers?: string;
+    priceWorker?: string;
+    customerFeedbacksCount?: string;
+    customerRating?: string;
 }
 
 interface LocationParams {
