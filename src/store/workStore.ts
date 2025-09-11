@@ -29,6 +29,7 @@ class WorkStore {
             // Если params null (например, геолокация недоступна), можно не загружать или передать null в Service
             if (params){
                 const response = await Service.loadData(params);
+                console.log(response)
                 this.data = response.data;
             }
         } catch (err) {
