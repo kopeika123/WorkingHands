@@ -25,8 +25,7 @@ export const useLoadShiftsByLocation = (location: Location | null) => {
         async function loadData() {
             if (location && isLocationChanged(prevLocation, location)) {
                 try {
-                    const result = await WorkStore.loadShifts(location);
-                    console.log('Shifts loaded:', result);
+                    await WorkStore.loadShifts(location);
                 } catch (error) {
                     console.error('Ошибка при загрузке данных:', error);
                 }

@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: 'transparent',
   },
   loadingText: {
     fontSize: 18,
@@ -31,6 +31,9 @@ export const styles = StyleSheet.create({
   },
   cellContent: {
     flexDirection: 'column',
+    justifyContent: 'center',
+    gap: 4,
+    paddingVertical: 10,
   },
   companyText: {
     fontSize: 16,
@@ -39,5 +42,34 @@ export const styles = StyleSheet.create({
   workTypeText: {
     fontSize: 14,
     color: '#666',
-  }
+  },
+  logo: {
+    width: 50,
+    height: 50,
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    borderRadius: 5,
+  },
+  centeredContainer: {
+    marginTop: 0,
+  },
+
+  row: {
+    flexDirection: 'row',
+    marginBottom: 8,
+  },
+
+  workTypeTextDetail: {
+    width: 140,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+
+  companyTextDetail: {
+    width: 140,
+    textAlign: 'center',
+    fontSize: 16,
+  },
 });
