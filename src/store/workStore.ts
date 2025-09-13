@@ -1,5 +1,5 @@
 import { makeAutoObservable, action } from 'mobx';
-import { Service } from '../service'; // Убедитесь, что Service правильно импортирован
+import { Service } from '../service';
 
 interface WorkData {
     workTypes?: { name: string }[];
